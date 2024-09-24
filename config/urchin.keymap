@@ -46,7 +46,7 @@
 			>;
 		};
 
-		number {
+		settings {
 			label = "Settings";
 			bindings = <
 				&none &none &none &none &none  &none &none &none &none &none

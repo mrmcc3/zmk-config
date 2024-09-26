@@ -2,30 +2,36 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-
-&sk {
-    quick-release;
-};
-
+#define AS(keycode) &as LS(keycode) keycode
 
 / {
+	behaviors {
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <135>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
 	keymap {
 		compatible = "zmk,keymap";
 
 		default {
 			label = "Default";
 			bindings = <
-				&mt LS(W) W    &mt LS(F) F    &mt LS(P) P    &mt LS(G) G    &mt LS(V) V 
-				&mt LS(Q) Q    &mt LS(J) J    &mt LS(O) O    &mt LS(U) U    &mt BSLH FSLH
+				AS(W) AS(F) AS(P) AS(G) AS(V)
+				AS(Q) AS(J) AS(O) AS(U) &none
 
-				&mt LS(C) C    &mt LS(S) S    &mt LS(N) N    &mt LS(T) T    &mt LS(M) M 
-				&mt DQT SQT    &mt LS(H) H    &mt LS(E) E    &mt LS(I) I    &mt LS(A) A
+				AS(C) AS(S) AS(N) AS(T) AS(M)
+				&none AS(H) AS(E) AS(I) AS(A)
+			
+				AS(Y) AS(X) AS(B) AS(D) AS(K)
+				AS(Z) AS(L) &none &none &none
 
-				&mt LS(Y) Y    &mt LS(X) X    &mt LS(B) B    &mt LS(D) D    &mt LS(K) K 
-				&mt LS(Z) Z    &mt LS(L) L    &mt UNDER MINUS    &mt SEMI COMMA    &mt COLON DOT
-				
-				&sl 1          &mt LS(R) R 
-				&kp SPACE      &key_repeat
+				&sl 1 AS(R)
+				&kp SPACE &key_repeat
 			>;
 		};
 

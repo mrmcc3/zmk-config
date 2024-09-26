@@ -2,49 +2,32 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
+&sk {
+    quick-release;
+};
+
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
 
-		default_layer {
+		default {
 			label = "Default";
 			bindings = <
-				&kp W &kp F &kp P &kp G &kp V &kp Q &kp J &kp O &mt DOLLAR U &mt PERCENT FSLH
-				&kp C &kp S &kp N &kp T &kp M &mt CARET SQT &lt 3 H &kp E &kp I &mt AT A
-				&kp Y &kp X &kp B &kp D &kp K &kp Z &kp L &mt TILDE MINUS &mt LT COMMA &mt GT DOT
-								  &sl 1 &kp R &kp SPACE &sl 2
+				&mt LS(W) W    &mt LS(F) F    &mt LS(P) P    &mt LS(G) G    &mt LS(V) V 
+				&mt LS(Q) Q    &kp LS(J) J    &mt LS(O) O    &mt LS(U) U    &mt BSLH FSLH
+
+				&mt LS(C) C    &mt LS(S) S    &mt LS(N) N    &mt LS(T) T    &mt LS(M) M 
+				&mt DQT SQT    &mt LS(H) H    &mt LS(E) E    &mt LS(I) I    &mt LS(A) A
+
+				&mt LS(Y) Y    &mt LS(X) X    &mt LS(B) B    &mt LS(D) D    &mt LS(K) K 
+				&mt LS(Z) Z    &mt LS(L) L    &mt UNDER MINUS    &mt SEMI COMMA    &mt COLON DOT
+				
+				&sl 1          &mt LS(R) R 
+				&kp SPACE      &lt 2 &key_repeat
 			>;
 		};
-
-		shift {
-			label = "Shift";
-			bindings = <
-				&kp LS(W) &kp LS(F) &kp LS(P) &kp LS(G) &kp LS(V) &kp LS(Q) &kp LS(J) &kp LS(O) &kp LS(U) &kp BSLH
-				&kp LS(C) &kp LS(S) &kp LS(N) &kp LS(T) &kp LS(M) &kp DQT &kp LS(H) &kp LS(E) &kp LS(I) &kp LS(A)
-				&kp LS(Y) &kp LS(X) &kp LS(B) &kp LS(D) &kp LS(K) &kp LS(Z) &kp LS(L) &kp UNDER &kp COLON &kp QMARK
-								                  &none &kp LS(R) &kp BSPC &sl 2
-			>;
-		};
-
-		symbol {
-			label = "Symbol";
-			bindings = <
-				&none &none &kp LBRC &kp RBRC &none &none &kp HASH &kp UP &kp STAR &kp PIPE
-				&none &none &kp LPAR &kp RPAR &none &kp GRAVE &kp LEFT &kp DOWN &kp RIGHT &kp AMPS
-				&none &none &kp LBKT &kp LBKT &none &none &kp EQUAL &kp PLUS &kp SEMI &kp EXCL
-									  &sl 1 &kp RET &kp DEL &none
-			>;
-		};
-
-		number {
-			label = "Number";
-			bindings = <
-				&none &kp N9 &kp N8 &kp N7 &none  &none &none &none &none &none
-				&kp N3 &kp N2 &kp N1 &kp N0 &none &bt BT_CLR &none &none &none &none
-				&none &kp N6 &kp N5 &kp N4 &none  &bt BT_SEL 0 &bt BT_SEL 1 &none &none &none
-									&none &kp ESC &kp TAB &none
-			>;
-		};		
 
 	};
 };

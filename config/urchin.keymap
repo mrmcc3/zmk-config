@@ -25,7 +25,24 @@
 				&mt LS(Z) Z    &mt LS(L) L    &mt UNDER MINUS    &mt SEMI COMMA    &mt COLON DOT
 				
 				&sl 1          &mt LS(R) R 
-				&kp SPACE      &lt 2 &key_repeat
+				&kp SPACE      &key_repeat
+			>;
+		};
+
+		sticky {
+			label = "sticky";
+			bindings = <
+				&none &none &none &none &none
+				&none &none &none &none &none
+
+				&none &none &none &none &none
+				&none &none &none &none &none
+
+				&none &none &none &none &none
+				&none &none &none &none &none				
+				
+				&caps_word &none
+				&kp BACKSPACE &none
 			>;
 		};
 

@@ -12,11 +12,11 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		default_keymap {
+		default {
 			label = "Default";
 			bindings = <
 				&mt LS(W) W    &mt LS(F) F    &mt LS(P) P    &mt LS(G) G    &mt LS(V) V 
-				&mt LS(Q) Q    &kp LS(J) J    &mt LS(O) O    &mt LS(U) U    &mt BSLH FSLH
+				&mt LS(Q) Q    &mt LS(J) J    &mt LS(O) O    &mt LS(U) U    &mt BSLH FSLH
 
 				&mt LS(C) C    &mt LS(S) S    &mt LS(N) N    &mt LS(T) T    &mt LS(M) M 
 				&mt DQT SQT    &mt LS(H) H    &mt LS(E) E    &mt LS(I) I    &mt LS(A) A

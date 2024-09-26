@@ -12,7 +12,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		default {
+		default_keymap {
 			label = "Default";
 			bindings = <
 				&mt LS(W) W    &mt LS(F) F    &mt LS(P) P    &mt LS(G) G    &mt LS(V) V 

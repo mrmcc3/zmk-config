@@ -39,7 +39,7 @@
 				AS(Z) AS(L) &as UNDER MINUS &as SEMI COMMA &as COLON DOT
 
 				&sl 1 AS(R)
-				&as SPACE BSPC &rml 1 0
+				&as BSPC SPACE &rml 1 0
 			>;
 		};
 
@@ -51,10 +51,10 @@
 				&as LT LPAR &as GT RPAR &kp UP &as DOLLAR HASH &as PERCENT PIPE
 
 				&as F3 N3 &as F2 N2 &as F1 N1 &kp N0 &none
-				&as CARET GRAVE &kp LEFT &kp DOWN &kp RIGHT &as AMPS AT
+				&as CARET GRAVE &kp LEFT &kp DOWN &kp RIGHT &as AT AMPS
 
 				&none &as F9 N9 &as F8 N8 &as F7 N7 &none
-				&as LBRC LBKT &as RBRC RBKT &as EQUAL TILDE &as PLUS STAR &as EXCL QMARK
+				&as LBRC LBKT &as RBRC RBKT &as TILDE EQUAL &as STAR PLUS &as EXCL QMARK
 
 				&caps_word &none
 				&as DEL TAB &as ESC RET

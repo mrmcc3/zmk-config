@@ -56,7 +56,7 @@
 				&none &as F9 N9 &as F8 N8 &as F7 N7 &none
 				&as LBRC LBKT &as RBRC RBKT &as TILDE EQUAL &as STAR PLUS &as EXCL QMARK
 
-				&trans &caps_word
+				&trans &none
 				&as DEL TAB &as ESC RET
 			>;
 		};

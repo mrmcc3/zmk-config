@@ -16,7 +16,7 @@
 
         rml: repeat_momentary_layer {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             tapping_term_ms = <200>;
             flavor = "hold-preferred";
             bindings = <&mo>, <&key_repeat>;

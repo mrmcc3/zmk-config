@@ -47,8 +47,8 @@
 		sym {
 			label = "Symbol";
 			bindings = <
-				AS(W) AS(F) AS(P) AS(G) AS(V)
-				AS(Q) AS(J) AS(O) AS(U) &as BSLH FSLH
+				&none &as F6 N6 &as F5 N5 &as F4 N4 &none
+				&as LT LPAR &as GT RPAR UP &as DOLLAR HASH &as PERCENT PIPE
 
 				AS(C) AS(S) AS(N) AS(T) AS(M)
 				&as DQT SQT AS(H) AS(E) AS(I) AS(A)

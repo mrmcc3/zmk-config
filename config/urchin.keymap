@@ -19,7 +19,7 @@
             #binding-cells = <0>;
             tapping_term_ms = <200>;
             flavor = "hold-preferred";
-            bindings = <&ml 2>, <&key_repeat>;
+            bindings = <&mo 1>, <&key_repeat>;
         };
 		
     };

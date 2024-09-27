@@ -43,6 +43,24 @@
 			>;
 		};
 
+
+		sym {
+			label = "Symbol";
+			bindings = <
+				AS(W) AS(F) AS(P) AS(G) AS(V)
+				AS(Q) AS(J) AS(O) AS(U) &as BSLH FSLH
+
+				AS(C) AS(S) AS(N) AS(T) AS(M)
+				&as DQT SQT AS(H) AS(E) AS(I) AS(A)
+			
+				AS(Y) AS(X) AS(B) AS(D) AS(K)
+				AS(Z) AS(L) &as UNDER MINUS &as SEMI COMMA &as COLON DOT
+
+				&caps_word &none
+				&as DEL TAB &as ESC RET
+			>;
+		};
+
 		// symbol {
 		// 	label = "Symbol";
 		// 	bindings = <

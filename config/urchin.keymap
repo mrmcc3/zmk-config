@@ -43,22 +43,22 @@
 			>;
 		};
 
-		symbol {
-			label = "Symbol";
-			bindings = <
-				&none &none &none &none &none
-				&as LT LPAR &as GT RPAR UP &as DOLLAR HASH &as PERCENT PIPE
+		// symbol {
+		// 	label = "Symbol";
+		// 	bindings = <
+		// 		&none &none &none &none &none
+		// 		&as LT LPAR &as GT RPAR UP &as DOLLAR HASH &as PERCENT PIPE
 
-				&none &none &none &none &none
-				&as CARET GRAVE LEFT DOWN RIGHT &as AMPS AT
+		// 		&none &none &none &none &none
+		// 		&as CARET GRAVE LEFT DOWN RIGHT &as AMPS AT
 
-				&none &none &none &none &none
-				&as LBRC LBKT &as RBRC RBKT &as EQUAL TILDE &as PLUS STAR &as EXCL QMARK				
+		// 		&none &none &none &none &none
+		// 		&as LBRC LBKT &as RBRC RBKT &as EQUAL TILDE &as PLUS STAR &as EXCL QMARK				
 
-				&none &none
-				&as DEL TAB &as ESC RET
-			>;
-		};
+		// 		&caps_word &none
+		// 		&as DEL TAB &as ESC RET
+		// 	>;
+		// };
 
 	};
 };

@@ -37,7 +37,7 @@
 				&as DQT SQT AS(H) AS(E) AS(I) AS(A)
 			
 				AS(Y) AS(X) AS(B) AS(D) AS(K)
-				AS(Z) AS(L) &as UNDER MIN &as SEMI COMMA &as COLON DOT
+				AS(Z) AS(L) &as UNDER MINUS &as SEMI COMMA &as COLON DOT
 
 				&sl 1 AS(R)
 				&kp SPACE &rml

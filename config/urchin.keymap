@@ -4,10 +4,6 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
-&caps_word {
-    continue-list = <UNDER MINUS>;
-};
-
 / {
 	behaviors {
         as: auto_shift {
@@ -25,7 +21,6 @@
             flavor = "hold-preferred";
             bindings = <&mo>, <&key_repeat>;
         };
-		
     };
 
 	keymap {
@@ -51,15 +46,15 @@
 		symbol {
 			label = "Symbol";
 			bindings = <
-				&none &as F6 N6 &as F5 N5 &as F4 N4 &none
+				&none &none &none &none &none
 				&as LT LPAR &as GT RPAR UP &as DOLLAR HASH &as PERCENT PIPE
 
-				&as F3 N3 &as F2 N2 &as F1 N1 N0 &none
+				&none &none &none &none &none
 				&as CARET GRAVE LEFT DOWN RIGHT &as AMPS AT
 
-				&none &as F9 N9 &as F8 N8 &as F7 N7 &none
-				&as LBRC LBKT &as RBRC RBKT &as EQUAL TILDE &as PLUS STAR &as EXCL QMARK
-				
+				&none &none &none &none &none
+				&as LBRC LBKT &as RBRC RBKT &as EQUAL TILDE &as PLUS STAR &as EXCL QMARK				
+
 				&caps_word &none
 				&as DEL TAB &as ESC RET
 			>;

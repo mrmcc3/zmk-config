@@ -4,6 +4,10 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
+&caps_word {
+    continue-list = <UNDER MINUS>;
+};
+
 / {
 	behaviors {
         as: auto_shift {
@@ -40,24 +44,24 @@
 				AS(Z) AS(L) &as UNDER MINUS &as SEMI COMMA &as COLON DOT
 
 				&sl 1 AS(R)
-				&kp SPACE &rml 1 0
+				&as SPACE BSPC &rml 2 0
 			>;
 		};
 
-		alt {
-			label = "alternate";
+		symbol {
+			label = "Symbol";
 			bindings = <
-				&none &none &none &none &none
-				&none &none &none &none &none
+				&none &as F6 N6 &as F5 N5 &as F4 N4 &none
+				&as LT LPAR &as GT RPAR UP &as DOLLAR HASH &as PERC PIPE
 
-				&none &none &none &none &none
-				&none &none &none &none &none
+				&as F3 N3 &as F2 N2 &as F1 N1 N0 &none
+				&as CARET GRAVE LEFT DOWN RIGHT &as AMPS AT
 
-				&none &none &none &none &none
-				&none &none &none &none &none				
+				&none &as F9 N9 &as F8 N8 &as F7 N7 &none
+				&as LBRC LBKT &as RBRC RBKT &as EQUAL TILDE &as PLUS STAR &as EXCL QMARK
 				
 				&caps_word &none
-				&kp BACKSPACE &none
+				&as DEL TAB &as ESC RET
 			>;
 		};
 

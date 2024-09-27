@@ -52,7 +52,7 @@
 			label = "Symbol";
 			bindings = <
 				&none &as F6 N6 &as F5 N5 &as F4 N4 &none
-				&as LT LPAR &as GT RPAR UP &as DOLLAR HASH &as PERC PIPE
+				&as LT LPAR &as GT RPAR UP &as DOLLAR HASH &as PERCENT PIPE
 
 				&as F3 N3 &as F2 N2 &as F1 N1 N0 &none
 				&as CARET GRAVE LEFT DOWN RIGHT &as AMPS AT

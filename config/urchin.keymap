@@ -9,10 +9,19 @@
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <135>;
+            tapping_term_ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        rml: repeat_momentary_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            tapping_term_ms = <200>;
+            flavor = "hold-preferred";
+            bindings = <&ml 2>, <&key_repeat>;
+        };
+		
     };
 
 	keymap {
@@ -22,21 +31,21 @@
 			label = "Default";
 			bindings = <
 				AS(W) AS(F) AS(P) AS(G) AS(V)
-				AS(Q) AS(J) AS(O) AS(U) &none
+				AS(Q) AS(J) AS(O) AS(U) &as BSLH FSLH
 
 				AS(C) AS(S) AS(N) AS(T) AS(M)
-				&none AS(H) AS(E) AS(I) AS(A)
+				&as DQT SQT AS(H) AS(E) AS(I) AS(A)
 			
 				AS(Y) AS(X) AS(B) AS(D) AS(K)
-				AS(Z) AS(L) &none &none &none
+				AS(Z) AS(L) &as UNDER MIN &as SEMI COMMA &as COLON DOT
 
 				&sl 1 AS(R)
-				&kp SPACE &key_repeat
+				&kp SPACE &rml
 			>;
 		};
 
-		sticky {
-			label = "sticky";
+		alt {
+			label = "alternate";
 			bindings = <
 				&none &none &none &none &none
 				&none &none &none &none &none

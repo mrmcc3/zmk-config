@@ -40,7 +40,7 @@
 				AS(Z) AS(L) &as UNDER MINUS &as SEMI COMMA &as COLON DOT
 
 				&sl 1 AS(R)
-				&kp SPACE &rml 1
+				&kp SPACE &rml 1 0
 			>;
 		};
 

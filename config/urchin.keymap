@@ -64,7 +64,7 @@
 		shortcut {
 			label = "shortcut";
 			bindings = <
-				&none &none &none &none &none
+				&none &none &none &none &bt BT_CLR_ALL
 				&none &none &none &none &none
 
 				&none &none &none &none &none

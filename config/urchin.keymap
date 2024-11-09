@@ -56,7 +56,7 @@
 		symbol {
 			label = "Symbol";
 			bindings = <
-				&none &as F6 N6 &as F5 N5 &as F4 N4 &none
+				&none &as F6 N6 &as F5 N5 &as F4 N4 &bt BT_CLR_ALL
 				&as LT LPAR &as GT RPAR &kp UP &as DOLLAR HASH &as PERCENT PIPE
 
 				&as F3 N3 &as F2 N2 &as F1 N1 &kp N0 &none
@@ -65,7 +65,7 @@
 				&none &as F9 N9 &as F8 N8 &as F7 N7 &none
 				&as LBRC LBKT &as RBRC RBKT &as TILDE EQUAL &as STAR PLUS &as EXCL QMARK
 
-				&trans &key_repeat
+				&kp ESC &none
 				&as DEL TAB &as ESC RET
 			>;
 		};
@@ -73,11 +73,11 @@
 		shortcut {
 			label = "shortcut";
 			bindings = <
-				&trans &trans &trans &trans &bt BT_CLR_ALL
+				&trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans
 
-				&trans &trans &kp LS(TILDE) &trans &trans
-				&trans &kp LS(TAB) &kp TILDE &kp TAB &trans
+				&trans &trans &trans &trans &trans
+				&trans &trans &kp TILDE &kp TAB &trans
 
 				&trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans
